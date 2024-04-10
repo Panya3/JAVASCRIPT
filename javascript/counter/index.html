@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment Decrement with Color Change</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        .number {
+            font-size: 36px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Increment Decrement with Color Change</h1>
+    <div class="number" id="numberDisplay">0</div>
+    <div class="buttons">
+        <button id="incrementBtn">Increment</button>
+        <button id="decrementBtn">Decrement</button>
+    </div>
+
+    <script>
+        let number = 0;
+        const numberDisplay = document.getElementById('numberDisplay');
+        const buttons = document.querySelectorAll('.buttons button');
+
+        function updateNumberAndColor() {
+            numberDisplay.textContent = number;
+
+            // Change color based on number value
+            if (number > 0) {
+                numberDisplay.style.color = 'green';
+            } else if (number < 0) {
+                numberDisplay.style.color = 'red';
+            } else {
+                numberDisplay.style.color = 'black';
+            }
+        }
+
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener('click', function() {
+                if (this.id === 'incrementBtn') {
+                    number++;
+                } else if (this.id === 'decrementBtn') {
+                    number--;
+                }
+                updateNumberAndColor();
+            });
+        }
+    </script>
+</body>
+</html>

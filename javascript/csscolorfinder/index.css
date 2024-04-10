@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(59, 59, 59);
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color:aliceblue;
+}
+
+input[type="color"] {
+    
+    vertical-align: middle;
+    border-radius: 2px;
+    border:20px;
+
+}
+#color{
+    margin-top:20px;
+}
+#colorvalue{
+    color:antiquewhite;
+}
+#yay {
+    display: block; /* Change to block */
+    margin: 20px auto; /* Center horizontally with auto margins */
+}
+.container{
+    margin-top: 10px;
+}

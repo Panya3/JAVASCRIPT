@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1F2041;
+    margin: 0;
+}
+
+.contain {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    background-color: #E2FCEF;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 60vh;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px; /* Add distance from the top */
+    margin-bottom: 50px; /* Add distance from the bottom */
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.container button {
+    width: 100%;
+    padding: 10px;
+}
